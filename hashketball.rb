@@ -238,7 +238,7 @@ def long_name_steals_a_ton?
   steals = hash[:home][:players][0]
   hash.each_value do |team|
     team[:players].each do |player|
-      if player[:steals].length > steals[:steals]
+      if player[:steals] > steals[:steals]
         steals = player
       end
     end
