@@ -106,29 +106,29 @@ def game_hash()
 end
 
 def num_points_scored
-
+  hash = game_hash
 end
 
 def shoe_size
-
+  hash = game_hash
 end
 
 def team_colors
-
+  hash = game_hash
 end
 
 def team_names
-
+  hash = game_hash
 end
 
 def player_numbers
-
+  hash = game_hash
 end
 
 def player_stats
-
+  hash = game_hash
 end
 
 def big_shoe_rebounds
-
+  hash = game_hash
 end
