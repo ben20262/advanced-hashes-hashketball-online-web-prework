@@ -219,7 +219,7 @@ def winning_team
   winner
 end
 
-def Player_with_longest_name
+def player_with_longest_name
   hash = game_hash
   name = ""
   hash.each_value do |team|
