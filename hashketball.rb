@@ -245,9 +245,3 @@ def long_name_steals_a_ton?
   end
   name
 end
-
-
-
-
-
-
