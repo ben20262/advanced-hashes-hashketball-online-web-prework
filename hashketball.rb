@@ -124,7 +124,7 @@ def shoe_size(name) #Takes name and returns shoe size
   hash.each_value do |team|
     team[:players].each do |stat|
       if stat[:player_name] == name
-        shoe = stat[:shoe_size]
+        shoe = stat[:shoe]
       end
     end
   end
