@@ -142,6 +142,11 @@ end
 
 def team_names #Returns array of team names
   hash = game_hash
+  teams = []
+  hash.each_value do |team|
+    teams << team[:team_name]
+  end
+  teams
 end
 
 def player_numbers(team) #Takes team name and returns array of numbers
