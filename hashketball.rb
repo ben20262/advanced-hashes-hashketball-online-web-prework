@@ -105,30 +105,31 @@ def game_hash()
   }
 end
 
-def num_points_scored
+def num_points_scored(name) #Takes name and returns points scored
+  hash = game_hash
+  
+end
+
+def shoe_size(name) #Takes name and returns shoe size
   hash = game_hash
 end
 
-def shoe_size
+def team_colors(team) #Takes team name and returns colors
   hash = game_hash
 end
 
-def team_colors
+def team_names #Returns array of team names
   hash = game_hash
 end
 
-def team_names
+def player_numbers(team) #Takes team name and returns array of numbers
   hash = game_hash
 end
 
-def player_numbers
+def player_stats(name) #Takes a name and returns player's stats
   hash = game_hash
 end
 
-def player_stats
-  hash = game_hash
-end
-
-def big_shoe_rebounds
+def big_shoe_rebounds #Returns true if player with largest shoe size has most rebounds
   hash = game_hash
 end
