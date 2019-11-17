@@ -152,7 +152,14 @@ end
 def player_numbers(t_name) #Takes team name and returns array of numbers
   hash = game_hash
   num = []
-  hash.each_value do  |team|
+  hash.each_value do |team|
+    if team[:team_name] == t_name
+      team[:players].each do |stat|
+        num << stat[:number]
+      end
+    end
+  end
+  num
 end
 
 def player_stats(name) #Takes a name and returns player's stats
