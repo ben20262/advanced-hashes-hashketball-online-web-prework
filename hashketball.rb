@@ -115,7 +115,6 @@ def num_points_scored(name) #Takes name and returns points scored
       end
     end
   end
-  puts points
   points
 end
 
