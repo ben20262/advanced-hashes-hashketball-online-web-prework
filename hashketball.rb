@@ -131,8 +131,13 @@ def shoe_size(name) #Takes name and returns shoe size
   shoe
 end
 
-def team_colors(team) #Takes team name and returns colors
+def team_colors(name) #Takes team name and returns colors
   hash = game_hash
+  hash.each_value do |team|
+    if team[:team_name] == name
+      return team[:colors]
+    end
+  end
 end
 
 def team_names #Returns array of team names
