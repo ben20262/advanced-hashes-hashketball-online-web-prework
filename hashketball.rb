@@ -184,14 +184,8 @@ def big_shoe_rebounds #Returns true if player with largest shoe size has most re
       end
       if player[:points] > shoe[:points]
         points = player
-      end 
+      end
     end
   end
   shoe == player
 end
-
-
-
-
-
-
