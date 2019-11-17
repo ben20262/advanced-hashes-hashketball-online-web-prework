@@ -179,9 +179,11 @@ end
 def big_shoe_rebounds #Returns true if player with largest shoe size has most rebounds
   hash = game_hash
   shoe = hash[:home][:players][0]
-  hash.each do |team|
+  hash.each_value do |team|
     team[:players].each do |player|
-
+      if player[:shoe] > shoe[:shoe]
+        shoe = player
+      end
     end
   end
   shoe[:rebounds]
