@@ -194,7 +194,7 @@ def most_points_scored
   points = hash[:home][:players][0]
   hash.each_value do |team|
     team[:players].each do |player|
-      if player[:points] > shoe[:points]
+      if player[:points] > points[:points]
         points = player
       end
     end
