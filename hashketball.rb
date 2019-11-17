@@ -107,7 +107,7 @@ end
 
 def num_points_scored(name) #Takes name and returns points scored
   hash = game_hash
-  
+
 end
 
 def shoe_size(name) #Takes name and returns shoe size
