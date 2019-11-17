@@ -164,8 +164,23 @@ end
 
 def player_stats(name) #Takes a name and returns player's stats
   hash = game_hash
+  hash.each_value do |team|
+    team[:players].each do |stat|
+      if stat[:player_name] == name
+        return stat
+      end
+    end
+  end
 end
 
 def big_shoe_rebounds #Returns true if player with largest shoe size has most rebounds
   hash = game_hash
 end
+
+
+
+
+
+
+
+
